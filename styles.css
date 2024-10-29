@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f8fb;
+    color: #333;
+}
+
+/* Headings */
+h2, h3 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+/* Input field styling */
+input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003f7f;
+}
+
+/* Toss Page styling */
+#toss_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+/* Player Display styling */
+.player-display {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between player name and image */
+    margin: 15px 0; /* Space between player sections */
+}
+
+/* Player Name styling */
+.player-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Player Image styling */
+.player-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
+    padding: 5px;
+}
+
+
+/* Sections styling */
+#main_page, #target_section, #game_page {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+/* Result message */
+#out_message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Player Info Flex Layout */
+.player-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Batting player styling */
+#batting_player_total {
+    font-weight: bold;
+    color: #00509e;
+    margin-left: 10px;
+}
+
+/* Player image and name layout */
+.player-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#batting_player {
+    font-size: 1.2em;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+/* Toss message */
+#toss_message {
+    color: #ff8c00;
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/* Score display */
+.score-display {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    color: #00509e;
+}
+
+/* Footer instructions */
+footer {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #main_page, #target_section, #game_page, #toss_page {
+        max-width: 100%;
+    }
+}

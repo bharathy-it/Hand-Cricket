@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hand Cricket</title>
+</head>
+<body>
+    <div id="main_page">
+        <input name="player_1" id="player_1" placeholder="Enter Player 1 Name Here..." required>
+        <input name="player_2" id="player_2" placeholder="Enter Player 2 Name Here..." required>
+        <button id="first_btn">Time for Toss</button>
+    </div>
+
+    <!-- The Hidden Page -->
+    <div id="target_section" style="display: none; margin-top: 20px;">
+        <div class="toss_page">
+            <h2>It's time for the Toss</h2>
+            <button id="toss_btn">Click for the toss</button>
+            <p id="toss_result"></p>
+            <button id="game_btn">Start the game</button>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game_page" style="display: none;">
+        <h2 id="batting_player"></h2>
+    
+        <div class="player-display">
+            <p id="player1_display" class="player-name"></p>
+            <img id="player1_img" src="" alt="Player 1 Image" class="player-image" />
+        </div>
+    
+        <div class="player-display">
+            <p id="player2_display" class="player-name"></p>
+            <img id="player2_img" src="" alt="Player 2 Image" class="player-image" />
+        </div>
+        
+        <p>Total Runs for <span id="batting_player_name"></span>: <span id="batting_player_total">0</span></p>
+        <p id="out_message" style="color: red; font-weight: bold;"></p>
+    
+        <button id="play_btn">Generate Numbers</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
